@@ -10,7 +10,7 @@ public class RestApiCalls {
     public static void getPetStatus() {
                 given().
                 when().
-                get("https://petstore.swagger.io/#/pet/").
+                get("https://petstore.swagger.io/v2/pet/").
                 then().
                 assertThat().
                 statusCode(200).
